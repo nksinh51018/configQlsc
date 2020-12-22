@@ -13,6 +13,22 @@ zuul:
          service-id: auth
          strip-prefix: false
          sensitive-headers: Cookie,Set-Cookie
+      customer:
+         path: /customer/**
+         service-id: customer
+         sensitive-headers: Cookie,Set-Cookie
+      maintenancecard:
+         path: /maintenancecard/**
+         service-id: maintenancecard
+         sensitive-headers: Cookie,Set-Cookie
+      product:
+         path: /product/**
+         service-id: product
+         sensitive-headers: Cookie,Set-Cookie
+      user:
+         path: /user/**
+         service-id: user
+         sensitive-headers: Cookie,Set-Cookie
 spring:
     http:
         multipart:
